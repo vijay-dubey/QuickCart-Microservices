@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+  main:
+    banner-mode: off
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///E:/QuickCart Microservices/config-repo
+
+server:
+  port: 8888
+
+logging:
+  level:
+    root: warn
+    com.quickcart.config_server: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
