@@ -1,0 +1,39 @@
+order-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/order_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   ├── OrderController.java
+│   │   │   │   └── OrderItemController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── OrderRequest.java
+│   │   │   │   │   └── OrderCancelRequest.java
+│   │   │   │   └── response/
+│   │   │   │       ├── OrderResponse.java
+│   │   │   │       └── OrderItemResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   ├── AddressClient.java
+│   │   │   │   ├── CartClient.java
+│   │   │   │   ├── ProductClient.java
+│   │   │   │   └── UserClient.java
+│   │   │   ├── mapper/
+│   │   │   │   ├── OrderMapper.java
+│   │   │   │   └── OrderItemMapper.java
+│   │   │   ├── model/
+│   │   │   │   ├── Order.java
+│   │   │   │   └── OrderItem.java
+│   │   │   ├── repository/
+│   │   │   │   ├── OrderRepository.java
+│   │   │   │   └── OrderItemRepository.java
+│   │   │   ├── service/
+│   │   │   │   ├── OrderService.java
+│   │   │   │   └── OrderItemService.java
+│   │   │   └── OrderServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
