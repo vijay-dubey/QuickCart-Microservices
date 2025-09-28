@@ -1,0 +1,30 @@
+spring:
+  main:
+    banner-mode: off
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/quickcart_ms_db
+    username: root
+    password: Yashkolpe@1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: warn
+    com.quickcart: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+
+jwt:
+  secret: Drz6bn6ocWhEmmoKrWmDfGAYSzFpMmqoTHqR5g9Cv9w=
+  expiration: 86400000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost

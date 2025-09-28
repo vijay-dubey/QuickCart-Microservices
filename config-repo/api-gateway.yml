@@ -1,0 +1,48 @@
+spring:
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: review-service
+              uri: lb://review-service
+              predicates:
+                - Path=/api/reviews/**   
+
+            - id: product-service
+              uri: lb://product-service
+              predicates:
+                - Path=/api/products/**
+
+            - id: cart-service
+              uri: lb://cart-service
+              predicates:
+                - Path=/api/cart/**,/api/cart-items/**
+
+            - id: user-service
+              uri: lb://user-service
+              predicates:
+                - Path=/api/users/**
+
+            - id: address-service
+              uri: lb://address-service
+              predicates:
+                - Path=/api/addresses/**
+
+            - id: order-service
+              uri: lb://order-service
+              predicates:
+                - Path=/api/orders/**,/api/order-items/**
+
+            - id: wishlist-service
+              uri: lb://wishlist-service
+              predicates:
+                - Path=/api/wishlist/**,/api/wishlist-items/**
+
+            - id: return-service
+              uri: lb://return-service
+              predicates:
+                - Path=/api/returns/**,/api/return-items/**
+  
+  config:
+    import: optional:configserver:http://localhost:8888/application
