@@ -1,0 +1,31 @@
+address-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/address_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   └── AddressController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── AddressRequest.java
+│   │   │   │   │   ├── AddressTypeRequest.java
+│   │   │   │   │   └── AddressUpdateRequest.java
+│   │   │   │   └── response/
+│   │   │   │       └── AddressResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   └── UserClient.java
+│   │   │   ├── mapper/
+│   │   │   │   └── AddressMapper.java
+│   │   │   ├── model/
+│   │   │   │   └── Address.java
+│   │   │   ├── repository/
+│   │   │   │   └── AddressRepository.java
+│   │   │   ├── service/
+│   │   │   │   └── AddressService.java
+│   │   │   └── AddressServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
