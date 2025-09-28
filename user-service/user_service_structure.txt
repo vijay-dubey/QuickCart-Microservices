@@ -1,0 +1,39 @@
+user-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/review_service/
+│   │   │   ├── config/
+│   │   │   │   ├── PasswordEncoderConfig.java
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   └── UserController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── LoginRequest.java
+│   │   │   │   │   ├── PasswordChangeRequest.java
+│   │   │   │   │   ├── UserRequest.java
+│   │   │   │   │   └── UserUpdate.java
+│   │   │   │   └── response/
+│   │   │   │       └── UserResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   ├── ProductClient.java
+│   │   │   │   └── UserClient.java
+│   │   │   ├── kafka/
+│   │   │   │   ├── UserKafkaProducer.java
+│   │   │   │   └── KafkaProducerConfig.java
+│   │   │   ├── mapper/
+│   │   │   │   └── UserMapper.java
+│   │   │   ├── model/
+│   │   │   │   └── User.java
+│   │   │   ├── repository/
+│   │   │   │   └── UserRepository.java
+│   │   │   ├── security/
+│   │   │   │   └── JwtAuthenticationFilter.java
+│   │   │   ├── service/
+│   │   │   │   └── UserService.java
+│   │   │   └── UserServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml

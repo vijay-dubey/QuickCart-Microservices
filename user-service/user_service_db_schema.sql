@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS quickcart_ms_db;
+
+USE quickcart_ms_db;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100),
+    phone VARCHAR(16) UNIQUE NOT NULL,
+    role ENUM('ADMIN', 'CUSTOMER') NOT NULL DEFAULT 'CUSTOMER',
+    gender ENUM('MALE', 'FEMALE', 'OTHER', 'PREFER_NOT_TO_SAY'),
+    dob DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    deleted BOOLEAN DEFAULT FALSE,
+    deleted_at TIMESTAMP NULL
+);

@@ -1,0 +1,16 @@
+we are removing cart, wishlist, addresses, return requsts and reviews mappings from user.java. So cascading feature is also gone as of now. We will add this with kafka events later. Don't miss. 
+
+
+✅ Updated field:
+java
+Copy
+Edit
+private String role = "CUSTOMER";
+🧠 Tip:
+Later in your service layer, when mapping this to the User entity, you can safely convert this String to the UserRole enum like this:
+
+java
+Copy
+Edit
+User.UserRole.valueOf(userRequest.getRole().toUpperCase())
+Wrap it in a try-catch if you want to handle invalid role values gracefully.
