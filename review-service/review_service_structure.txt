@@ -1,0 +1,33 @@
+review-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/review_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   └── ReviewController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   └── ReviewRequest.java
+│   │   │   │   └── response/
+│   │   │   │       └── ReviewResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   ├── ProductClient.java
+│   │   │   │   └── UserClient.java
+│   │   │   ├── kafka/
+│   │   │   │   ├── ReviewKafkaProducer.java
+│   │   │   │   └── KafkaProducerConfig.java
+│   │   │   ├── mapper/
+│   │   │   │   └── ReviewMapper.java
+│   │   │   ├── model/
+│   │   │   │   └── Review.java
+│   │   │   ├── repository/
+│   │   │   │   └── ReviewRepository.java
+│   │   │   ├── service/
+│   │   │   │   └── ReviewService.java
+│   │   │   └── ReviewServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
