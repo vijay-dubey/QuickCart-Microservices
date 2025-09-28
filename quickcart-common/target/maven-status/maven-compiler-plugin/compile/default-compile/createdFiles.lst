@@ -1,0 +1,9 @@
+com\quickcart\common\dto\ProductDto.class
+com\quickcart\common\dto\UserDto.class
+com\quickcart\common\security\JwtAuthorizationFilter.class
+com\quickcart\common\config\FeignClientConfig.class
+com\quickcart\common\dto\events\UserDeletedEvent.class
+com\quickcart\App.class
+com\quickcart\common\exception\ValidationException.class
+com\quickcart\common\security\JwtUtil.class
+com\quickcart\common\exception\ErrorResponse.class

@@ -1,0 +1,23 @@
+quickcart-common/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/common/
+│   │   │   ├── config/
+│   │   │   │   └── FeignClientConfig.java
+│   │   │   ├── dto/
+│   │   │   │   ├── UserDto.java
+│   │   │   │   ├── ProductDto.java
+│   │   │   │   ├── AddressDto.java
+│   │   │   │   ├── CartDto.java
+│   │   │   │   ├── CartItemDto.java
+│   │   │   │   ├── OrderDto.java
+│   │   │   │   └── OrderItemDto.java
+│   │   │   ├── event/
+│   │   │   │   └── UserDeletedEvent.java
+│   │   │   ├── exception/
+│   │   │   │   ├── ValidationException.java
+│   │   │   │   └── ErrorResponse.java
+│   │   │   └── security/
+│   │   │       ├── JwtUtil.java
+│   │   │       └── JwtAuthorizationFilter.java
+├── pom.xml
