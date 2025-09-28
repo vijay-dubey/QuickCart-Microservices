@@ -9,7 +9,7 @@ interface CategoryCard {
 const categories: CategoryCard[] = [
   {
     title: 'Accessories',
-    image: 'https://corporate.jaihindretail.com/images/Collections/Accessories/Accessories.jpg',
+    image: 'https://www.chehraknarimani.com/Uploads/blog/1402/99.jpg',
     link: '/products?category=Accessories'
   },
   {
