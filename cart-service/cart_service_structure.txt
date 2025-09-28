@@ -1,0 +1,36 @@
+cart-service
+ ├── src/main/java/com/quickcart/cart_service
+ │    ├── config
+ │    │    └── SecurityConfig.java
+ │    ├── controller
+ │    │    ├── CartController.java
+ │    │    └── CartItemController.java
+ │    ├── dto
+ │    │    ├── request
+ │    │    │    └── CartItemRequest.java
+ │    │    └── response
+ │    │         ├── CartResponse.java
+ │    │         └── CartItemResponse.java
+ │    ├── exception
+ │    │    └── GlobalExceptionHandler.java
+ │    ├── kafka
+ │    │    ├── KafkaProducerConfig.java
+ │    │    └── CartKafkaProducer.java
+ │    ├── mapper
+ │    │    ├── CartMapper.java
+ │    │    └── CartItemMapper.java
+ │    ├── model
+ │    │    ├── Cart.java
+ │    │    └── CartItem.java
+ │    ├── repository
+ │    │    ├── CartRepository.java
+ │    │    └── CartItemRepository.java
+ │    ├── service
+ │    │    ├── CartService.java
+ │    │    └── CartItemService.java
+ │    └── CartServiceApplication.java
+ │
+ ├── src/main/resources
+ │    └── application.yml
+ │
+ └── pom.xml
