@@ -1,0 +1,38 @@
+return-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/return_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   ├── ReturnRequestController.java
+│   │   │   │   └── ReturnItemController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── CreateReturnRequest.java
+│   │   │   │   │   └── ReturnItemRequest.java
+│   │   │   │   └── response/
+│   │   │   │       ├── ReturnItemResponse.java
+│   │   │   │       └── ReturnRequestResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   ├── OrderClient.java
+│   │   │   │   ├── ProductClient.java
+│   │   │   │   └── UserClient.java
+│   │   │   ├── mapper/
+│   │   │   │   ├── ReturnItemMapper.java
+│   │   │   │   └── ReturnRequestMapper.java
+│   │   │   ├── model/
+│   │   │   │   ├── ReturnRequest.java
+│   │   │   │   └── ReturnItem.java
+│   │   │   ├── repository/
+│   │   │   │   ├── ReturnRequestRepository.java
+│   │   │   │   └── ReturnItemRepository.java
+│   │   │   ├── service/
+│   │   │   │   ├── ReturnRequestService.java
+│   │   │   │   └── ReturnItemService.java
+│   │   │   └── ReturnServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
