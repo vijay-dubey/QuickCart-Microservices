@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS quickcart_ms_db;
+
+USE quickcart_ms_db;
+
+DROP TABLE IF EXISTS products;
+
+CREATE TABLE products (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    description TEXT,
+    image_url VARCHAR(512),
+    stock INT NOT NULL DEFAULT 0 CHECK (stock >= 0),
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

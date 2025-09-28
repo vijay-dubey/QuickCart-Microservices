@@ -1,0 +1,30 @@
+product-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/product_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   └── ProductController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── ProductRequest.java
+│   │   │   │   │   └── ProductUpdateRequest.java
+│   │   │   │   └── response/
+│   │   │   │       └── ProductResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   └── ReviewClient.java
+│   │   │   ├── mapper/
+│   │   │   │   └── ProductMapper.java
+│   │   │   ├── model/
+│   │   │   │   └── Product.java
+│   │   │   ├── repository/
+│   │   │   │   └── ProductRepository.java
+│   │   │   ├── service/
+│   │   │   │   └── ProductService.java
+│   │   │   └── ProductServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
