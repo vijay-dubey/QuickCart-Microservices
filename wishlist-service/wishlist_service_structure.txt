@@ -1,0 +1,40 @@
+wishlist-service/
+├── src/
+│   ├── main/
+│   │   ├── java/com/quickcart/wishlist_service/
+│   │   │   ├── config/
+│   │   │   │   └── SecurityConfig.java
+│   │   │   ├── controller/
+│   │   │   │   ├── WishlistController.java
+│   │   │   │   └── WishlistItemController.java
+│   │   │   ├── dto/
+│   │   │   │   ├── request/
+│   │   │   │   │   └── WishlistItemRequest.java
+│   │   │   │   └── response/
+│   │   │   │       ├── WishlistResponse.java
+│   │   │   │       └── WishlistItemResponse.java
+│   │   │   ├── exception/
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   ├── feign/
+│   │   │   │   ├── CartClient.java
+│   │   │   │   ├── ProductClient.java
+│   │   │   │   └── UserClient.java
+│   │   │   ├── kafka/
+│   │   │   │   ├── KafkaConsumerConfig.java
+│   │   │   │   └── WishlistKafkaConsumer.java
+│   │   │   ├── mapper/
+│   │   │   │   ├── WishlistMapper.java
+│   │   │   │   └── WishlistItemMapper.java
+│   │   │   ├── model/
+│   │   │   │   ├── Wishlist.java
+│   │   │   │   └── WishlistItem.java
+│   │   │   ├── repository/
+│   │   │   │   ├── WishlistRepository.java
+│   │   │   │   └── WishlistItemRepository.java
+│   │   │   ├── service/
+│   │   │   │   ├── WishlistService.java
+│   │   │   │   └── WishlistItemService.java
+│   │   │   └── WishlistServiceApplication.java
+│   │   └── resources/
+│   │       └── application.yml
+├── pom.xml
