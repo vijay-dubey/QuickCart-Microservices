@@ -19,7 +19,7 @@ const apiClient = axios.create({
   // Set withCredentials to false when using same-origin requests via proxy
   withCredentials: false,
   // Add timeout to avoid long loading times when API is unavailable
-  timeout: 5000,
+  timeout: 15000,
 });
 
 // Add a request interceptor to include the auth token in requests
