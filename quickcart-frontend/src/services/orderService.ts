@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 import apiClient from './apiClient';
 import returnService from './returnService';
 

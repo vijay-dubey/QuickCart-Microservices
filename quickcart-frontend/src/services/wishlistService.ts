@@ -1,5 +1,4 @@
 import apiClient from './apiClient';
-import { Product } from './productService';
 
 export interface WishlistItem {
   id: number;
